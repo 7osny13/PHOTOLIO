@@ -3,6 +3,10 @@
     padding: 0;
     margin: 0;
 }
+.drob-down:hover
+{
+    cursor: pointer;
+}
 .header *
 {
     margin-top: 15px;
@@ -24,4 +28,52 @@
 .footer a
 {
     color: black;
+}
+.overlay
+{
+    position: fixed;
+    display: none;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+    transition: top 2s, right 2s, bottom 2s, left 2s;
+}
+.overlay .close
+{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding: 10px 15px;
+
+}
+.overlay .close:hover
+{
+    background-color: rgb(97, 95, 95);
+    cursor: pointer;
+}
+
+.overlay .close i
+{
+    color: white;
+}
+.overlay .content
+{
+    position: fixed;
+    top: 28%;
+    left: 45%;
+}
+.overlay .content p:hover
+{
+    cursor: pointer;
+    color: aliceblue;
+}
+.overlay .content * 
+{
+    font-size: 2.5rem;
+    color:rgb(139, 139, 138)
 }
